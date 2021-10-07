@@ -84,8 +84,6 @@
                 foreach ($arrayContar as $clave => $valor) {
                 
                     $puntuacion=$puntuacion+$valor;
-
-                    echo"</br>$puntuacion</br>";
     
                 }
                 
