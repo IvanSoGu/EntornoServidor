@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Formulario 03 html </title>
+        
+    </head>
+
+    <body>
+
+        <form action="Formulario 03.php">
+
+            <h2> FORMULARIO </h2> <br>
+
+            <label> Numero 1 </label> <input type="number" name="Numero1"> </input> <br><br>
+            
+            <label> Numero 2 </label> <input type="range" name="Numero2" min="10" max="100"> </input> <br><br>
+            
+            <label> Estaciones </label> <input list="ListaEstaciones"> </input> <br><br>
+            
+            <datalist id="ListaEstaciones">
+
+                <option value="Verano">
+                <option value="Otoño">
+                <option value="Invierno">
+                <option value="Primavera">
+
+            </datalist>
+
+            <label> Color </label> <input type="color" name="Color"> </input> <br><br>
+            
+            <label> Buscar </label> <input type="search" name="Buscar"> </input> <br><br>
+
+            <label> Nombre </label> <input type="text" name="Nombre"> </input> <br><br>
+
+            <label> Apellido </label> <input type="text" name="Apellido"> </input> <br><br>
+
+            <label> E-mail </label> <input type="email" name="Email"> </input> <br><br>
+
+            <label> Fecha de Nacimiento </label> <input type="Date" name="Fecha"> </input> <br><br>
+
+            <label> Edad </label> <input type="number" name="Edad"> </input> <br><br>
+
+            <label> Página personal </label> <input type="url" name="Url"> </input> <br><br>
+
+            <label> Horario de </label> <input type="time" name="TimeDesde"> </input>
+            <label> hasta </label> <input type="time" name="TimeHasta"> </input><br><br>
+
+            <input type="submit" value="Enviar">
+
+        <form>
+        
+    </body>
+
+</html>

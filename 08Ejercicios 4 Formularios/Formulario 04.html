@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Formulario 04 </title>
+
+        <style>
+
+            body{
+
+                background-color: grey;
+                margin: 30px;
+
+            }
+
+            h1{
+
+                color: rgb(41, 0, 0);
+
+            }
+
+            
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <form action="Formulario 04.php">
+
+            <h1> FORMULARIO MAS COMPLETO </h1> <hr> <br>
+
+            <h2> CAMPOS DE TEXTO </h2> <br>
+
+            <label> Nombre: </label> <input type="text" name="Nombre"> <br> <br>
+            <label> Contraseña: </label> <input type="password" name="Clave"> <br> <hr> <br>
+
+            <h2> RADIO </h2> <br>
+
+            <label> Rojo </label> <input type="radio" name="Semaforo" value="Rojo"> <br>
+            <label> Naranja </label> <input type="radio" name="Semaforo" value="Naranja"> <br>
+            <label> Verde </label> <input type="radio" name="Semaforo" value="Verde"> <br> <hr> <br>
+
+            <h2> CHECKBOX </h2> <br>
+
+            <label> Quiero recibir publicidad </label> <input type="checkbox" name="Publicidad"> <br> <br>
+
+            <h2> MULTICHECKBOX </h2>
+
+            <label> Inglés </label> <input type="checkbox" name="Idioma" Value="Ingles">
+            <label> Francés </label> <input type="checkbox" name="Idioma" Value="Francés">
+            <label> Alemán </label> <input type="checkbox" name="Idioma" Value="Alemán"> <br> <hr> <br>
+
+            <h2> SELECT SIMPLE </h2>
+
+            <label> Año finalización de los estudios </label> 
+            <select name="AñoFinalizacion">
+
+                <option value=2021> 2021 </option>
+                <option value=2020> 2020 </option>
+                <option value=2019> 2019 </option>
+                <option value="+3años"> Hace ya mas de 3 años </option>
+            
+            </select> <br> <br>
+
+            <label> Ciudades </label>
+            <select name="Ciudades[]" multiple>
+
+                <option value=28> Madrid </option>
+                <option value=47> Valladolid </option>
+                <option value=08> Barcelona </option>
+                <option value=39> Santander </option>
+                <option value=09> Burgos </option>
+            
+            </select> <br> <hr> <br>
+
+            <h2> TEXTAREA </h2>
+
+            <label> Escriba sus comentarios: </label> <textarea name="Comentarios" rows=6 cols=30></textarea> <br> <hr> <br>
+
+            <h2> BOTONES </h2> <br>
+
+            <input type="reset" value="Resetear el formulario">
+
+            <input type="submit" value="Enviar el formulario">
+
+        </form>
+        
+    </body>
+
+</html>
