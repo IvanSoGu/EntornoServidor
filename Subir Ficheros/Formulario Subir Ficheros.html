@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title> Formulario Subir Ficheros </title>
+
+  </head>
+
+  <body>
+
+    <!-- type="image/png" -->
+
+    <form  enctype="multipart/form-data" method="post"  action="Post Subir Ficheros.php">
+            
+      <label> Dirección de subida </label>
+      <input type="text" value="/home/alumnoa/tallerphp/imgusers" name="direccion"> <br>
+
+      <fieldset>
+
+        <legend>Subir múltiples imágenes</legend>
+        <label>Elija las imagenes que quieres subir:</label> 
+        <!--  200Kbytes -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="200000" />
+        <input name="archivos[]" type="file" accept="image/png, image/jpeg" multiple> <br />
+
+        <input type="submit" value=" Subir archivos " />
+        <input type="reset"  value=" Borrar selección ">
+              
+            
+      </fieldset>
+
+    </form>
+        
+  </body>
+
+</html>
